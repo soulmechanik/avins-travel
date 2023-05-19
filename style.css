@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,500&family=Quicksand:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+
+/* color scheme */
+:root{
+    --hover:rgb(74, 180, 230);
+    --black:#181717;
+    --light-color:#fff;
+    --box-shadow:.5rem .5rem 0 black;
+    --text-shadow:.4rem .4rem 0 rgba(64, 173, 37, 0.2);
+    --border:.2rem solid #16a085
+}
+/* color scheme */
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+ /* css reset */
+ *{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition:all .2s ease-out ;
+}
+a{
+    text-decoration: none;
+}
+ /* css reset */
+
+
+
+
+
+
+/* everything hamburger */
+.header{
+    padding: 1.5rem 2.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0 ;
+    z-index:1000;
+    box-shadow: 0 .5rem 1.5rem rgba(1, 14, 2, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f4f5;
+
+}
+
+
+.header .logo{
+    font-size: 1.9rem;
+    color: var(--light-color);
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color: var(--hover);
+}
+
+#menu-btn{
+font-size: 2.5rem;
+border-radius: .5rem;
+background:#eee ;
+color: #2b233f;
+padding: 1rem 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Register{
+    border: 1px solid rgb(98, 209, 157);
+    border-radius: 9px;
+    padding: 5px 20px 5px 20px;
+    color:rgb(98, 209, 157) !important ;
+}
+/* everything hamburger */
+
+
+    section{
+        padding: 2rem 9% ;
+    }
+
+    .heading{
+        text-align: center;
+        padding-bottom:4rem;
+       
+        text-transform: uppercase;
+        color:rgb(29, 28, 28);
+        font-size:3.5rem;
+        letter-spacing:.4rem ;
+    }
+    
+    .heading span{
+    
+        text-transform: uppercase;
+        color: var(--green);
+    
+    }
+    
+    
+    .btn{ text-align: center;
+        padding: 10px;
+        display: inline-block;
+        height: 50px;
+        width: 150px;
+        border: var(--border);
+        border-radius: 1rem;
+        color: whitesmoke;
+        cursor: pointer;
+        font-size: 1.7rem;
+        background: linear-gradient(to right,teal, rgb(105, 101, 101));
+    }
+    .btn:hover{
+        
+        color: black;
+        transform: scale(1.1);
+        
+    }
+    .btn:hover span{
+        color: var(--green);
+        background: #fff;
+        margin-left: 1rem ;
+    
+    
+    }
+    
+    
+    .home{
+       min-height:95vh;
+       width ;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding-top: 10rem;
+        position: relative;
+        background: rgb(245, 248, 241);
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
+    }
+    .home .image{
+        flex:1 1 45rem;
+    }
+    .home .image img{
+    width: 100%;
+   
+    
+    }
+    .home .content{
+        background-image: url(Finance\ leaders-bro.svg);
+        background-size: contain;
+        flex:1 1 45rem;
+    }
+    .home .content h3{
+        background: linear-gradient(to right, #0a7552, #5c8bd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-size:4.5rem ;
+        color: #161515;
+        line-height: 1.1;
+    }
+    .home .content p{
+        font-size:1.7rem ;
+        color: var(--black);
+        line-height: 1.8;
+        padding: 1rem 0 ;
+    }
+
+.services{
+    background: rgba(239, 245, 239, 0.555);
+}
+ .wedo{
+    background: linear-gradient(to right, #2e3331, #033a2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: monospace;
+}
+
+    .services .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        gap: 2rem;
+    }
+    .services .box-container .box{
+        background: #fff;
+        border-radius: .5rem;
+        box-shadow: var(--text-shadow);
+        border:;
+        padding: 2rem;
+    }
+    
+    .services .box-container .box i{
+        color: rgb(136, 156, 136);
+        font-size: 3rem;
+        padding-bottom:.5rem ;
+    }
+    .services .box-container .box h2 {
+        background: linear-gradient(to right, #0a7552, #5c8bd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        color: var(--black);
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+    .services .box-container .box p {
+        color: rgb(75, 70, 70);
+        font-size: 1.4rem; 
+        line-height: 2;
+    }
+    
+    
+    
+
+    .faq {
+        margin-bottom: 10px;
+      }
+      
+      .question {
+        background-color: #f0f0f0;
+        color: teal;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .answer {
+        display: none;
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .answer p {
+        margin: 0;
+      }
+      
+      .fa {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .open .fa {
+        transform: rotate(180deg);
+      }
+      
+
+
+
+      .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 2rem;
+    }
+    .footer .box-container .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+        padding: 1rem 0;
+    }
+    .footer .box-container .box a{
+        display: block;
+        font-size: 1.5rem;
+        color: grey;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box a i{
+        padding-right: .5rem;
+        color: var(--green);
+    }
+    .footer .box-container .box a:hover i{
+        padding-right: 2rem;
+       
+    }
+    .footer .credit{
+        padding: 1rem;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(36, 15, 37);
+        font-weight: 700;
+        border-top: .3rem solid rgba(0, 0, 0, .3);
+    }
+    
+    .footer .credit span{
+        background-image: linear-gradient(to right, green, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* responsivness abd media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+display: initial;
+    }
+    .header .navbar{
+        text-align: center;
+        position: absolute;
+        display: inline-block;
+        top: 115% ;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width:30rem;
+        border: var(--border);
+        background:#edebf3;
+        transform: scale(0);
+        opacity:0;
+        transform-origin: top right;
+        transition: none;
+       
+    }
+    .header .navbar.active{
+        transform: scale(1);
+        opacity:1;
+        transform-origin: top right;
+        transition: .2s ease-out;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+
+/* responsivness abd media queries */
